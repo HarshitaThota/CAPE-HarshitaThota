@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="style.css" type="text/css">
+<html>
+
+<head>
+    <title>
+        WORKOUT LOGGER
+    </title>
+</head>
+
+<body>
+    <h1 class="header1"> <big>
+            <center>Enter Workout Split</center>
+        </big></h1>
+    <flex>
+        <form>
+            <div class="container">
+
+
+                <label for="SUN">
+                    <center>SUNDAY</center>
+                </label>
+                <!-- <select> <option>PUSH</option><option>PULL</option></select> -->
+                <input type="text" id="sun" name="sun"></br>
+                <label for="MON">
+                    <center>MONDAY</center>
+                </label>
+                <input type="text" id="mon" name="mon"></br>
+                <label for="TUE">
+                    <center>TUESDAY</center>
+                </label>
+                <input type="text" id="tue" name="tue"></br>
+                <label for="WED">
+                    <center>WEDNESDAY</center>
+                </label>
+                <input type="text" id="wed" name="wed"></br>
+                <label for="THU">
+                    <center>THURSDAY</center>
+                </label>
+                <input type="text" id="thu" name="thu"></br>
+                <label for="FRI">
+                    <center>FRIDAY</center>
+                </label>
+                <input type="text" id="fri" name="fri"></br>
+                <label for="SAT">
+                    <center>SATURDAY</center>
+                </label>
+                <input type="text" id="sat" name="sat"></br>
+                <button class="submit" type="submit">SAVE</button>
+
+            </div>
+
+        </form>
+    </flex>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const fd = new FormData(form);
+            const obj = Object.fromEntries(fd);
+            const json = JSON.stringify(obj);
+            localStorage.setItem('form', json);
+            window.location.href = "pg3-1.html";
+        })
+    </script>
+
+
+</body>
+
+</html>

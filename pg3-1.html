@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css" type="text/css">
+<html>
+    <head>
+        <title> SPLIT </title>
+    </head>
+    <body>
+        <main>
+            <h1>YOUR SPLIT</h1>
+            <div class = 'split' id = 'text'></div>
+            <button class = 'confirm' id = 'button'>CONFIRM</button>
+        </main>
+        <p>
+        <script>
+            const json = localStorage.getItem('form');
+            const obj = JSON.parse(json);
+            for (key in obj){
+                const markup = `
+                <div>
+                    <span> ${key}: ${obj[key]}</span>
+                    </div> 
+                    `;
+                    document.getElementById('text').innerHTML += markup;
+            }
+        </script>
+        </p>
+    </body>
+</html>
