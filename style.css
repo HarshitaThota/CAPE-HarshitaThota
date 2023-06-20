@@ -156,10 +156,11 @@ button:hover{
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
-    color: gold;
+    color: black;
     letter-spacing: 5px;
     text-align: center;
     position: relative;
+    background-color: goldenrod;
 }
 
 .back{
@@ -174,3 +175,121 @@ h2{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+h3{
+    color:gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: goldenrod;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 4px;
+}
+
+h3:hover{
+    color:yellowgreen;
+    letter-spacing: 6px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+}
+table{
+    text-align: center;
+}
+
+th{
+    color: gold;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    letter-spacing: 2px;
+    padding-left: 25px;
+}
+
+td{
+    color: gold;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    letter-spacing: 2px;
+    padding-left: 25px;
+    padding-top: 4px;
+
+}
+
+table, th, td {
+    border: 1px solid gold;
+    border-collapse: collapse;
+  }
+
+  h4{
+    color:gold;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 2px;
+    padding:20px;
+}
+
+colgroup{
+    color: gold;
+
+}
+
+.abtMe
+{
+    font-family: sans-serif;
+    font-size: x-large;
+    color: gold;
+    background-color: rgb(0, 0, 0);
+    word-spacing: 10px;
+    padding-top: 4px;
+    line-height: 40px;
+    margin-left: 75px;
+    margin-right: 600px;
+  
+}
+
+.abtMe:hover
+{
+    color: gold;
+}
+
+.contact
+{
+    font-family: sans-serif;
+    word-spacing: 3px;
+    line-height: 30px;
+}
+
+.contact:hover
+{
+    color: gold;
+}
+
+
+.mypic{
+    
+        width: 500px;
+        height: 625;
+       margin-right:75px ;
+        float: right;
+    }
+    
+footer
+{
+    color: gold;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.linkedIn
+{
+    color: gold;
+}
+
+.linkedIn:hover
+{
+    color: greenyellow;
+}
+

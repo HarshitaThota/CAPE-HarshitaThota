@@ -7,12 +7,14 @@
         <main>
             <h1>YOUR SPLIT</h1>
             <div class = 'split' id = 'text'></div>
-            <button class = 'confirm' id = 'button'>CONFIRM</button>
-            <flex><button class = 'back' id = 'button'> PREVIOUS..</button></flex>
+            
+            <a href = "pg3-2.html"><button onclick = "getInputValue()" class = 'confirm' id = 'button'>CONFIRM</button></a>
+            <flex><a href="pg3.html"><button class = 'back' id = 'button'> PREVIOUS..</button></a></flex>
         </main>
         <p>
         <script>
-            const json = localStorage.getItem('form');
+   
+          const json = localStorage.getItem('form');
             const obj = JSON.parse(json);
             for (key in obj){
                 const markup = `
@@ -20,9 +22,14 @@
                     <span> ${key}: ${obj[key]}</span>
                     </div> 
                     `;
-                    document.getElementById('text').innerHTML += markup;
+                    document.getElementById('text').innerHTML += markup; 
             }
+            
         </script>
         </p>
+        <footer>
+
+            tharshita@gmail.com
+        </footer>
     </body>
 </html>

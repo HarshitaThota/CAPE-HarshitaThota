@@ -9,7 +9,7 @@
 
 <body>
     <h1 class="header1"> <big>
-            <center>Enter Workout Split</center>
+            <center>ENTER WORKOUT SPLIT</center>
         </big></h1>
     <flex>
         <form>
@@ -45,7 +45,7 @@
                     <center>SATURDAY</center>
                 </label>
                 <input type="text" id="sat" name="sat"></br>
-                <button class="submit" type="submit">SAVE</button>
+                <button id=" submit" class="submit" type="submit">SAVE</button>
 
             </div>
 
@@ -54,16 +54,24 @@
 
     <script>
         const form = document.querySelector('form');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const fd = new FormData(form);
-            const obj = Object.fromEntries(fd);
-            const json = JSON.stringify(obj);
-            localStorage.setItem('form', json);
-            window.location.href = "pg3-1.html";
-        })
-    </script>
+         form.addEventListener('submit', (e) => {
+             e.preventDefault();
+             const fd = new FormData(form);
+             const obj = Object.fromEntries(fd);
+             const json = JSON.stringify(obj);
+             localStorage.setItem('form', json);
+             window.location.href = "pg3-1.html";
+         })
 
+
+
+
+
+    </script>
+<footer>
+
+    tharshita@gmail.com
+       </footer>
 
 </body>
 

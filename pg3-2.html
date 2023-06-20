@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="style.css" type="text/css">
+<html>
+
+<head>
+    <title>
+        SPLIT
+    </title>
+</head>
+
+<body>
+    <h3>WEEK 1</h3>
+    <h4>SUNDAY</h4>
+    <table id=reqContents>
+
+        <tr>
+            <th>ACTIVITY</th>
+            <th>WEIGHT</th>
+            <th>SETS</th>
+            <th>REPS</th>
+            <th>NOTES</th>
+        </tr>
+        <colgroup>
+            <col style="width: 128px">
+            <col style="width: 136px">
+            <col style="width: 84px">
+            <col style="width: 113px">
+            <col style="width: 500px">
+        </colgroup>
+    </table>
+
+    <form class = "table1" >
+        <input type="button" onclick="createTable()" value="Customize the table!">
+    </form>
+    <script>
+        function createTable() {
+            rn = window.prompt("Input number of rows", 1);
+            cn = window.prompt("Input number of columns", 1);
+
+            for (var r = 0; r < parseInt(rn, 10); r++) {
+                var x = document.getElementById('reqContents').insertRow(r);
+                for (var c = 0; c < parseInt(cn, 10); c++) {
+                    var y = x.insertCell(c);
+                    y.innerHTML = "Row-" + r + " Column-" + c;
+                }
+            }
+        }
+    </script>
+
+    <footer>
+
+        tharshita@gmail.com
+    </footer>
+</body>
+
+</html>
