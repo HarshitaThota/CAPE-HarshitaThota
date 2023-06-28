@@ -24,7 +24,7 @@
 font-size: 40px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color:transparent;
-
+word-spacing: 4px;
 background-image: linear-gradient(gold, goldenrod, yellow);
 text-align: center;
 -webkit-text-stroke: 2px black;
