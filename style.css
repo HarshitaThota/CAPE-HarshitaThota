@@ -293,3 +293,12 @@ footer
     color: greenyellow;
 }
 
+.spotify
+{
+    color: gold;
+}
+
+.spotify:hover
+{
+    color: greenyellow;
+}

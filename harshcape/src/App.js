@@ -19,5 +19,7 @@ const person = [{
 
 function App() {
 return <Perky users={person}/>
+
 }
+
 export default App;
