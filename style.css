@@ -125,6 +125,9 @@ button {
     position: absolute;
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 500px;
+    right:642px;   
+    text-align: center;
 }
 
 button:hover{
@@ -187,7 +190,6 @@ h3{
 }
 
 h3:hover{
-    color:yellowgreen;
     letter-spacing: 6px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: whitesmoke;
@@ -301,4 +303,20 @@ footer
 .spotify:hover
 {
     color: greenyellow;
+}
+
+.suggestions{
+    float: right;
+    color: gold;
+
+}
+.randomizeSplit{
+    color:gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: goldenrod;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 4px;
 }

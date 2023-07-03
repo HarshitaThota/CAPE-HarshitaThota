@@ -23,10 +23,7 @@
     <img id="leye" class="left" src="/images/left.JPEG">
 
     <flex>
-
-        <a href="pg2.html"><button id=" myB" class="myB">
-                <center>GET STARTED</center>
-            </button></a>
+        <a href="javascript:void" id="myB" class="myB" onclick="change()" ><center>GET STARTED</center></a>
     </flex>
 
 
@@ -34,11 +31,15 @@
 
     <script>
 
-
         function change() {
+
             document.getElementById("reye").src = "/images/rightNew.JPEG";
             document.getElementById("leye").src = "/images/leftNew.JPEG";
+            setTimeout(function () {
+                window.location = "pg2.html"
+            }, 300);
         }
+
 
 
     </script>
